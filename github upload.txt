@@ -1,0 +1,11 @@
+Here is the automated set of commands to initialize git, package your project files, and push them up to a new GitHub repository directly from your terminal.
+
+Before running these, ensure you have created a blank repository on GitHub (do not check the boxes to add a README, .gitignore, or license during the setup on the website).
+Step 1: Create a .gitignore File (Crucial First Step)
+
+Before adding files to Git, you must tell it to ignore your virtual environment (ml_env_p01). If you don't, Git will try to upload thousands of background system files, which will cause your upload to crash.
+
+Run this single command in your Windows command prompt to generate the file automatically:
+
+(echo ml_env_p01/ && echo .ipynb_checkpoints/ && echo __pycache__/) > .gitignore
+
